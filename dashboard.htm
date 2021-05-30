@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bg-color{
+            background-color: #fff;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(to right, aliceblue,aliceblue);
+        }
+
+        .col {
+            float: left;
+            padding: 2%;
+
+        }
+
+        .col-5 {
+            width: 20%;
+        }
+
+        .col-2 {
+            width: 60%;
+        }
+
+        .border-styling {
+            height: 100vh;
+            /* border: 1px solid red; */
+            border-top-right-radius: 6%;
+            border-bottom-right-radius: 6%;
+        }
+
+        #logo img {
+            height: 60px;
+            display: block;
+            margin: auto;
+        }
+
+        #menu {
+            font-family: 'Crimson Pro', serif;
+            display: block;
+            line-height: 45px;
+            padding: 20% 15%;
+            background-color: #fff;
+        }
+
+        #menu a {
+            display: block;
+            text-decoration: none;
+            color: grey;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        #app_png{
+            background-image: url("assets/images/app.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 200px;
+            width: 100%;
+            border-radius: 5%;
+        }
+
+        .active{
+            color: blue;
+
+        }
+        .main_area{
+            /* border: 2px solid red; */
+            height: 100vh;
+
+        }
+        .main_area .row-big{
+            height: 65%;
+
+        }
+        .main_area .row-small{
+            height: 35%;
+        }
+        .main_area .row .col{
+            height: 100%;
+            /* border: 2px solid black; */
+            display: inline-block;
+        }
+        .main_area .row .col-big{
+            width: 70%;
+
+        }
+        .main_area .row .col-small{
+            width: 30%;
+
+        }
+        .borders{
+            border-radius: 8%;
+        }
+        #user-info{
+            height: 100%;
+            padding: 4%;
+        }
+        .height-50{
+            height: 45%;
+        }
+        .height-100{
+            height: 100%;
+            border-radius: 5%;
+        }
+
+        #live-token{
+            margin-top: 13%;
+        }
+        .box-shadows{
+            box-shadow: 5px 5px 3px grey;
+        }
+
+        #right-sec{
+            /* border: 2px solid red; */
+            height: 100vh;
+            padding-left: 0;
+            
+        }
+        #right-container{
+            height: 100%;
+            /* border: 2px solid blue; */
+            border-radius: 3.5%;
+        }
+        #right-container .row-40{
+            height: 40%;
+            /* border: 2px solid black; */
+        }
+        #right-container .row-60{
+            height: 60%;
+            /* border: 2px solid blue; */
+        }
+        #right-sec .box-shadows{
+            box-shadow: 0px 5px 3px grey;
+        }
+        .row-60, .row-40{
+            padding: 2% 3%;
+
+        }
+        .div1{
+            background-image: url("assets/images/1.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 20%;
+        }
+        .div2{
+            background-image: url("assets/images/2.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 20%;
+        }
+        .div3{
+            background-image: url("assets/images/3.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 20%;
+        }
+        .div4{
+            background-image: url("assets/images/4.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 20%;
+        }
+        .mtb{
+            margin: 4% 0%;
+        }
+
+        .height-25{
+            height: 20%;
+        }
+        .usr-col{
+            border: 2px solid red;
+            height: 100%;
+        }
+        .usr-col .usr-head{
+            height: 40%;            
+            border: 2px solid black;
+        }
+        .usr-col .usr-body{
+            border: 2px solid blue;
+            height: 60%;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            #right-sec{
+                display: none;
+            }
+        }
+        
+        
+        
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col col-5 border-styling  bg-color box-shadows">
+            <div id="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <div id="menu">
+                <a href="#" class="active"><i class="fa fa-address-book active" style="font-size:16px; margin-right: 10px;"></i>Dashboard</a>
+                <a href="#"><i class="fas fa-file" style="font-size:16px; margin-right: 10px;"></i>Appointments</a>
+                <a href="#"><i class="fas fa-user-plus" style="font-size:16px; margin-right: 10px;"></i>Doctors</a>
+                <a href="#"><i class="fas fa-user-plus" style="font-size:16px; margin-right: 10px;"></i>Analyzes</a>
+                <a href="#"><i class="fas fa-user-plus" style="font-size:16px; margin-right: 10px;"></i>History</a>
+                <a href="#"><i class="fas fa-user-plus" style="font-size:16px; margin-right: 10px;"></i>Messages</a>
+
+            </div>
+            <hr>
+            <div id="app_png"></div>
+
+
+
+
+
+        </div>
+        <div class="col col-2 main_area">
+
+            <div class="row row-big">
+                <div class="col col-big">
+                    <div id="user-info" class="bg-color borders box-shadows">
+                        <div class="usr-col">
+                            <div class="usr-head">
+                                
+                            </div>
+                                <div class="usr-body">
+
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div id="tokens-col" class="col col-small">
+                    <div id="usr-token" class="row height-50 bg-color borders box-shadows"></div>
+                    <div id="live-token" class="row height-50 bg-color borders box-shadows"></div>
+                </div>
+
+
+            </div>
+            <div class="row row-small">
+                <div class="bg-color height-100 box-shadows">
+                    
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div id="right-sec" class="col col-5">
+            <div id="right-container" class="bg-color borders box-shadows">
+                <div class="row-40">
+
+                </div>
+                <hr>
+                <div class="row-60">
+                    <div class="div1 height-25 mtb"></div>
+                    <div class="div2 height-25 mtb"></div>
+                    <div class="div3 height-25 mtb"></div>
+                    <div class="div4 height-25 mtb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
