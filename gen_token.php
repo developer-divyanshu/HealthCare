@@ -1,4 +1,5 @@
 <?php
+//Php code 
     include("parts/conn.php");
     session_start();
 
